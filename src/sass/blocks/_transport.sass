@@ -1,7 +1,8 @@
 .transport  
   display: flex
   flex-direction: column
-  background-color: $black
+  background:  url('../img/black.png') repeat-y center left -340px, url('../img/black.png') repeat-y center right -287px
+  padding: 166px 0 166px 0
   &__main
     display: flex
     justify-content: space-between
@@ -10,8 +11,48 @@
     flex-direction: column
     align-items: flex-start
     justify-content: space-between
-    background-color: $black2
+    position: relative
     color: #fff
+    width: 35%
+    &:before
+        content: ''
+        position: absolute
+        display: block
+        top: 0
+        left: 0
+        background-color: $gold
+        width: 90px
+        height: 6px
+        z-index: 1
     h2
       text-transform: uppercase
       font-size: 40px
+      position: relative
+    p
+      font-weight: normal
+      font-size: 18px
+      line-height: 1.6
+      margin: 0 0 50px 0
+    button
+      border: none
+      color: #fff
+      background-color: $gold
+      padding: 18px 48px 18px 48px
+  &__slide
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    color: $gold
+    font-size: 30px
+    &_top
+      span:nth-child(2)
+        font-size: 79px
+    &_bottom
+      span:nth-child(1)
+        font-size: 79px
+.span
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 115%
