@@ -1,0 +1,43 @@
+.services
+  &__main
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: auto
+    position: relative
+    margin: 0 0 190px 0
+    &:before
+        content: ''
+        position: absolute
+        display: block
+        top: 0
+        left: 0
+        background-color: $gold
+        width: 90px
+        height: 6px
+        z-index: 1    
+    &_link
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+      margin: 30px auto 0 auto
+      &s
+        display: flex
+        align-items: center
+        flex-direction: column
+        background-color: $main
+        justify-content: center
+        text-transform: uppercase
+        width: 276px
+        min-height: 180px
+        margin: 1px auto 0 auto
+        z-index: 1
+        background: url('../img/plane.png') no-repeat 124px 30px
+        background-color: $main
+        &:hover 
+          cursor: pointer
+          background: url('../img/plane2.png') no-repeat 124px 30px, url('../img/Ellipse.png') no-repeat 104px 10px
+          background-color: $gold
+    p
+      margin: 23px 0 0 0

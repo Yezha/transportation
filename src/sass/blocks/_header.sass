@@ -1,6 +1,6 @@
 .header
   display: flex
-  flex-direction: column  
+  flex-direction: column
   &__top
     background-color: $gold
     width: 100%
@@ -8,9 +8,12 @@
       display: flex
       justify-content: space-between
       align-items: center
+      font-size: 12px
       a
         color: #fff
-        text-decoration: none  
+        text-decoration: none
+        &:nth-child(2)
+          margin-left: 2px
     &_list
       display: flex
       list-style: none
@@ -20,6 +23,7 @@
       a
         color: #fff
         text-decoration: none
+        padding-left: 1px
   &__main
     background: url('../img/Car.png') no-repeat center center fixed
     background-size: cover
@@ -34,11 +38,16 @@
       text-align: center
       align-items: center
       border: 1px $gold solid
-      text-transform: uppercase
+      width: 85%
+      margin: 0 auto
+      padding: 50px
       h1
+        text-transform: uppercase
         font-weight: bold
         color: #fff
         font-size: 64px
+        line-height: 75px
+        margin: 0
       p
         font-weight: normal
         font-size: 18px
