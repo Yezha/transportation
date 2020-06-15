@@ -62,3 +62,22 @@
         line-height: 26px
         &:nth-child(3)
           font-size: 12px
+@media (max-width: 1130px)
+  .about
+    &__card
+      &:before
+        display: none
+@media (max-width: 767px)
+  .about
+    &__text
+      display: flex
+      justify-content: center
+      h2
+        align-items: center
+        font-size: 21px
+      p
+        display: none
+    &__main
+      display: flex
+      flex-direction: column
+      justify-content: space-around
