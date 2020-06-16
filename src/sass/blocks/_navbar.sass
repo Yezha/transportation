@@ -8,7 +8,6 @@
     display: flex
     align-items: center
     justify-content: space-between
-    width: 32%
     font-size: 18px 
     img
       padding-right: 30px
@@ -22,6 +21,7 @@
     i
       color: $gold
       font-size: 40px
+      margin: 0 14px 0 0
   &_navbar
     display: flex
     justify-content: space-around
@@ -101,3 +101,18 @@
     text-decoration: none
     color: #fff
     margin: 0 20px 0 0
+.header
+  &__nav
+    &_logo
+      i
+        display: none
+      a
+        display: none
+      img
+        border-right: none
+@media (max-width: 522px)
+  .header
+    &__nav
+      &_logo
+        img
+          width: 100%
